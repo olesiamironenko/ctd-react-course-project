@@ -2,6 +2,7 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import Counter from './Counter.jsx';
+import TacoBuilder from './TacoBuilder';
 
 function App() {
   return (
@@ -15,12 +16,15 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <div className="card">
-        <Counter />
-      </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <div className="card">
+        <Counter />
+      </div>
+      <div>
+        <TacoBuilder />
+      </div>
     </>
   );
 }
