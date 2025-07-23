@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 function CreateUserForm() {
   const [userInfo, setUserInfo] = useState({ firstName: '', lastName: '' });
-  const [submittedUser, setSubmittedUser] = useState(null); // ← new state
+  const [submittedUser, setSubmittedUser] = useState(null); // new state
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -40,7 +40,7 @@ function CreateUserForm() {
         <button type="submit">Submit</button>
       </form>
 
-      {/* 👇 Show submitted user after form submit */}
+      {/* Show submitted user after form submit */}
       {submittedUser && (
         <p>
           Submitted: {submittedUser.firstName} {submittedUser.lastName}
