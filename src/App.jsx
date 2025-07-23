@@ -4,6 +4,7 @@ import './App.css';
 import Counter from './Counter.jsx';
 import TacoBuilder from './TacoBuilder';
 import CreateUserForm from './CreateUserForm';
+import AnotherCounter from './AnotherCounter';
 
 function App() {
   return (
@@ -21,16 +22,20 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <div className="card">
-        <h2>Counter</h2>
+        <h2>1. Counter</h2>
         <Counter />
       </div>
       <div>
-        <h2>Taco Builder</h2>
+        <h2>2. Taco Builder</h2>
         <TacoBuilder />
       </div>
       <div>
-        <h2>Create User</h2>
+        <h2>3. Create User</h2>
         <CreateUserForm />
+      </div>
+      <div>
+        <h2>4. Counnter with useEffect</h2>
+        <AnotherCounter />
       </div>
     </>
   );
