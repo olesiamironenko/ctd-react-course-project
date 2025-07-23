@@ -5,6 +5,8 @@ import Counter from './Counter.jsx';
 import TacoBuilder from './TacoBuilder';
 import CreateUserForm from './CreateUserForm';
 import AnotherCounter from './AnotherCounter';
+import WebSocketComponent from './WebSocketComponent';
+import ExampleComponent1 from './ExampleComponent1';
 
 function App() {
   return (
@@ -34,8 +36,16 @@ function App() {
         <CreateUserForm />
       </div>
       <div>
-        <h2>4. Counnter with useEffect</h2>
+        <h2>4. Counter with useEffect</h2>
         <AnotherCounter />
+      </div>
+      <div>
+        <h2>5. Web Socket Component useEffect</h2>
+        <WebSocketComponent />
+      </div>
+      <div>
+        <h2>6. Component with useEffect with empty dependency array</h2>
+        <ExampleComponent1 />
       </div>
     </>
   );
