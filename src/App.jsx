@@ -3,6 +3,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 import Counter from './Counter.jsx';
 import TacoBuilder from './TacoBuilder';
+import CreateUserForm from './CreateUserForm';
 
 function App() {
   return (
@@ -20,10 +21,16 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <div className="card">
+        <h2>Counter</h2>
         <Counter />
       </div>
       <div>
+        <h2>Taco Builder</h2>
         <TacoBuilder />
+      </div>
+      <div>
+        <h2>Create User</h2>
+        <CreateUserForm />
       </div>
     </>
   );
