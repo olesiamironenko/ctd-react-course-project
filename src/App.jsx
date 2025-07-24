@@ -1,6 +1,7 @@
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
+import { useState } from 'react';
 import Counter from './Counter.jsx';
 import TacoBuilder from './TacoBuilder';
 import CreateUserForm from './CreateUserForm';
@@ -9,8 +10,11 @@ import WebSocketComponent from './WebSocketComponent';
 import ExampleComponent1 from './ExampleComponent1';
 import ExampleComponent2 from './ExampleComponent2';
 import PageTitleUpdatingCounter from './PageTitleUpdatingCounter';
+import EmailInput from './EmailInput';
 
 function App() {
+  const [email, setEmail] = useState('');
+
   return (
     <>
       <div>
@@ -58,6 +62,16 @@ function App() {
           8. useRef used in conjunction with useEffect to update a page title
         </h2>
         <PageTitleUpdatingCounter />
+      </div>
+      <div>
+        <h2>
+          setEmail - a state update function provided as a callback by the
+          parent component
+        </h2>
+        <div>
+          <EmailInput setEmail={setEmail} />
+          {email && <p>Submitted email: {email}</p>}
+        </div>
       </div>
     </>
   );
