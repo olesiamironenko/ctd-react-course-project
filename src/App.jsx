@@ -7,6 +7,8 @@ import CreateUserForm from './CreateUserForm';
 import AnotherCounter from './AnotherCounter';
 import WebSocketComponent from './WebSocketComponent';
 import ExampleComponent1 from './ExampleComponent1';
+import ExampleComponent2 from './ExampleComponent2';
+import PageTitleUpdatingCounter from './PageTitleUpdatingCounter';
 
 function App() {
   return (
@@ -44,8 +46,18 @@ function App() {
         <WebSocketComponent />
       </div>
       <div>
-        <h2>6. Component with useEffect with empty dependency array</h2>
+        <h2>6. Effect with empty dependency array</h2>
         <ExampleComponent1 />
+      </div>
+      <div>
+        <h2>7. Effect without dependencies</h2>
+        <ExampleComponent2 />
+      </div>
+      <div>
+        <h2>
+          8. useRef used in conjunction with useEffect to update a page title
+        </h2>
+        <PageTitleUpdatingCounter />
       </div>
     </>
   );
