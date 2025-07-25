@@ -11,6 +11,7 @@ import ExampleComponent1 from './ExampleComponent1';
 import ExampleComponent2 from './ExampleComponent2';
 import PageTitleUpdatingCounter from './PageTitleUpdatingCounter';
 import EmailInput from './EmailInput';
+import ArrowFunctionCounter from './ArrowFunctionCounter';
 
 function App() {
   const [email, setEmail] = useState('');
@@ -72,6 +73,10 @@ function App() {
           <EmailInput setEmail={setEmail} />
           {email && <p>Submitted email: {email}</p>}
         </div>
+      </div>
+      <div>
+        <h2>Arrow Function Counter</h2>
+        <ArrowFunctionCounter />
       </div>
     </>
   );
