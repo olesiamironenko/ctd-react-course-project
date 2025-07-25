@@ -66,7 +66,7 @@ function App() {
       </div>
       <div>
         <h2>
-          setEmail - a state update function provided as a callback by the
+          9. setEmail - a state update function provided as a callback by the
           parent component
         </h2>
         <div>
@@ -75,7 +75,7 @@ function App() {
         </div>
       </div>
       <div>
-        <h2>Arrow Function Counter</h2>
+        <h2>10. Arrow Function Counter</h2>
         <ArrowFunctionCounter />
       </div>
     </>
