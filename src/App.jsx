@@ -101,6 +101,7 @@ function App() {
           </h2>
           <div>
             <EmailInput setEmail={setEmail} />
+            {/* logical && operator to conditionally show a component */}
             {email && <p>Submitted email: {email}</p>}
           </div>
         </div>
