@@ -13,6 +13,7 @@ import PageTitleUpdatingCounter from './PageTitleUpdatingCounter';
 import EmailInput from './EmailInput';
 import ArrowFunctionCounter from './ArrowFunctionCounter';
 import Modal from './Modal';
+import TrafficLight from './TrafficLight';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -108,6 +109,10 @@ function App() {
         <div>
           <h2>10. Arrow Function Counter</h2>
           <ArrowFunctionCounter />
+        </div>
+        <div style={{ textAlign: 'center', marginTop: '50px' }}>
+          <h1>11. Traffic Light Simulation</h1>
+          <TrafficLight />
         </div>
       </div>
     </>
